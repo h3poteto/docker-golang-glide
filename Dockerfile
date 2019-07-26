@@ -17,7 +17,7 @@ RUN set -ex && \
     mv linux-amd64/glide /usr/local/bin/glide && \
     rm -rf linux-amd64 && \
     rm glide-v${GLIDE_VERSION}-linux-amd64.tar.gz && \
-    go get -v github.com/rubenv/sql-migrate/... && \
+    go get bitbucket.org/liamstask/goose/cmd/goose && \
     go get -u github.com/jessevdk/go-assets  && \
     go get -u github.com/jessevdk/go-assets-builder && \
     rm -rf /go/src
